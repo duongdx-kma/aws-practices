@@ -1,0 +1,37 @@
+{
+  "Version": "2008-10-17",
+  "Id": "__default_policy_ID",
+  "Statement": [
+    {
+      "Sid": "Stmt1234",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lambda.amazonaws.com"
+      },
+      "Action": [
+        "sqs:ReceiveMessage",
+        "sqs:sendMessage"
+      ],
+      "Resource": "arn:aws:sqs:ap-southeast-1:240993297305:sqs-video",
+      "Condition": {
+        "ArnEquals": {
+          "aws:SourceArn": "arn:aws:lambda:ap-southeast-1:240993297305:lambda-video"
+        }
+      }
+    },
+    {
+      "Sid": "Stmt12345",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": "sqs:SendMessage",
+      "Resource": "arn:aws:sqs:ap-southeast-1:240993297305:sqs-video",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:sns:ap-southeast-1:240993297305:sns-fanout"
+        }
+      }
+    }
+  ]
+}
