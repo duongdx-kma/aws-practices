@@ -1,0 +1,34 @@
+{
+    "AutoScalingGroupName": "ec2_group_name",
+    "TimeZone": "Asia/Seoul",
+    "ScheduledUpdateGroupActions": [
+      {
+        "ScheduledActionName": "20240825-out-1130",
+        "StartTime": "2024-08-25 11:30:00",
+        "MinSize": 2,
+        "MaxSize": 3,
+        "DesiredCapacity": 2
+      },
+      {
+        "ScheduledActionName": "20240825-in-1230",
+        "StartTime": "2024-08-25 12:30:00",
+        "MinSize": 0,
+        "MaxSize": 3,
+        "DesiredCapacity": 2
+      },
+      {
+        "ScheduledActionName": "20240825-out-1630",
+        "StartTime": "2024-08-25 16:30:00",
+        "MinSize": 2,
+        "MaxSize": 3,
+        "DesiredCapacity": 2
+      },
+      {
+        "ScheduledActionName": "20240825-in-1730",
+        "StartTime": "2024-08-25 17:30:00",
+        "MinSize": 0,
+        "MaxSize": 3,
+        "DesiredCapacity": 2
+      }
+    ]
+  }
