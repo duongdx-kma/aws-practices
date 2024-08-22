@@ -1,0 +1,25 @@
+{
+    "TargetLambdaFncName": "demoFunction2",
+    "TargetLambdaFncArn": "arn:aws:lambda:ap-southeast-1:240993297305:function:demoFunction2",
+    "TimeZone": "Asia/Seoul",
+    "ScheduledUpdateGroupActions": [
+      {
+        "ScheduledActionName": "testing-schedule-scale-out-schedule-20240825-1130",
+        "ScheduleGroupName": "testing-schedule",
+        "StartTime": "2024-08-25 11:30:00",
+        "State": "ENABLED",
+        "ScaleOut": true,
+        "NumberOfAdjustment": 2,
+        "DbType": "db.r5.xlarge"
+      },
+      {
+        "ScheduledActionName": "testing-schedule-scale-in-schedule-20240825-1230",
+        "ScheduleGroupName": "testing-schedule",
+        "StartTime": "2024-08-25 12:30:00",
+        "State": "ENABLED",
+        "ScaleOut": false,
+        "NumberOfAdjustment": 2,
+        "DbType": "db.r5.xlarge"
+      }
+    ]
+  }
