@@ -87,7 +87,9 @@ the function event is: {'Records': [{'EventSource': 'aws:sns', 'EventVersion': '
 4. https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-notifications.html
 
 ## II. Monitoring AWS Backup events using Amazon EventBridge
-
+```
+AWS Backup jobs fail  → Event Bridge Rule → SNS Topic → Lambda → Teams
+```
 
 ### Backup event with EventBridge reference links:
 1. https://docs.aws.amazon.com/aws-backup/latest/devguide/eventbridge.html
