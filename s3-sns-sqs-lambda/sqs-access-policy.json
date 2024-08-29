@@ -12,10 +12,10 @@
         "sqs:ReceiveMessage",
         "sqs:sendMessage"
       ],
-      "Resource": "arn:aws:sqs:ap-southeast-1:240993297305:sqs-video",
+      "Resource": "arn:aws:sqs:ap-southeast-1:<account-id>:sqs-video",
       "Condition": {
         "ArnEquals": {
-          "aws:SourceArn": "arn:aws:lambda:ap-southeast-1:240993297305:lambda-video"
+          "aws:SourceArn": "arn:aws:lambda:ap-southeast-1:<account-id>:lambda-video"
         }
       }
     },
@@ -26,10 +26,10 @@
         "AWS": "*"
       },
       "Action": "sqs:SendMessage",
-      "Resource": "arn:aws:sqs:ap-southeast-1:240993297305:sqs-video",
+      "Resource": "arn:aws:sqs:ap-southeast-1:<account-id>:sqs-video",
       "Condition": {
         "ArnLike": {
-          "aws:SourceArn": "arn:aws:sns:ap-southeast-1:240993297305:sns-fanout"
+          "aws:SourceArn": "arn:aws:sns:ap-southeast-1:<account-id>:sns-fanout"
         }
       }
     }

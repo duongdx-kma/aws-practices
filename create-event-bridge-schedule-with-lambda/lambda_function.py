@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 
 # Default configurations
-default_iam_role_arn = 'arn:aws:iam::240993297305:role/allow-event-bridge-invoke-lambda-role'
+default_iam_role_arn = 'arn:aws:iam::<account-id>:role/allow-event-bridge-invoke-lambda-role'
 default_add_payload = {"identifier": "hhe-eql-document-clusters", "action": "add", "db_type": "db.r5.xlarge", "quantity": "2"}
 default_remove_payload = {"identifier": "hhe-eql-document-clusters", "action": "remove", "db_type": "db.r5.xlarge", "quantity": "2"}
 date_format = '%Y-%m-%d %H:%M:%S'
