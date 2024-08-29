@@ -1,0 +1,43 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:aws-region:AccountId:SNSTopicArn:6a89fc17-7114-4c7c-9f61-9fa605278e6d",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "9b01f85b-f3f5-5bab-a134-a71c56e45fb1",
+                "TopicArn": "arn:aws:sns:aws-region:AccountId:SNSTopicArn",
+                "Subject": "Notification from AWS Backup",
+                "Message": "An AWS Backup job was completed successfully. Recovery point ARN: arn:aws:ec2:aws-region::image/ami-0ff040cf6eb20f71d. Backed up Resource ARN : arn:aws:ec2:aws-region:AccountId:instance/i-0de375e10b7882cbb. Backup Job Id : E16FD778-147E-BBD0-14E9-BC67450BE135",
+                "Timestamp": "2024-08-27T09:56:33.903Z",
+                "SignatureVersion": "1",
+                "Signature": "oW3Z5Kw2GAFWunOOyGCNnXxGZaIz+zkSKa1lfyDcnGKcoCvUi163nJWhpEBtHgh04Xg663wwtu3zmsbepfkKoiVz2701/18PC0GAaTbaVImt44+udhT5HWlAo/Bgrt7U+BBLP3yUeZbmqQ9VAvsOf5O0unDTQZuIfswo9deHPKKB3MglAOyj8z8UEWskWHqQDotJZslQImUcR8yQqyGf0PPesVc+7yiGM4IYDvzgr0leMzKWL+i5hDlk45oZRBGE154818Mgc4V9hlRWWPLM/cPan2lQAjRvxl5nhqwo0OhLZs9FOfqipiVHod/YO7uPEhxoxTLi2BBF1hx/d+y4uw==",
+                "SigningCertUrl": "https://sns.aws-region.amazonaws.com/SimpleNotificationService-60eadc530605d63b8e62a523676ef735.pem",
+                "UnsubscribeUrl": "https://sns.aws-region.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:aws-region:AccountId:SNSTopicArn:6a89fc17-7114-4c7c-9f61-9fa605278e6d",
+                "MessageAttributes": {
+                    "AccountId": {
+                        "Type": "String",
+                        "Value": "AccountId"
+                    },
+                    "EventType": {
+                        "Type": "String",
+                        "Value": "BACKUP_JOB"
+                    },
+                    "State": {
+                        "Type": "String",
+                        "Value": "COMPLETED"
+                    },
+                    "StartTime": {
+                        "Type": "String",
+                        "Value": "2024-08-27T09:20:00Z"
+                    },
+                    "Id": {
+                        "Type": "String",
+                        "Value": "E16FD778-147E-BBD0-14E9-BC67450BE135"
+                    }
+                }
+            }
+        }
+    ]
+}
