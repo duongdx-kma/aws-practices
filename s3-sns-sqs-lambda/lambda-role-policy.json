@@ -12,8 +12,8 @@
                 "logs:PutLogEvents"
             ],
             "Resource": [
-                "arn:aws:sqs:ap-southeast-1:240993297305:sqs-image",
-                "arn:aws:logs:ap-southeast-1:240993297305:log-group:/aws/lambda/lambda-image:*"
+                "arn:aws:sqs:ap-southeast-1:<account-id>:sqs-image",
+                "arn:aws:logs:ap-southeast-1:<account-id>:log-group:/aws/lambda/lambda-image:*"
             ]
         },
         {
@@ -24,8 +24,8 @@
                 "logs:CreateLogGroup"
             ],
             "Resource": [
-                "arn:aws:logs:ap-southeast-1:240993297305:*",
-                "arn:aws:sqs:ap-southeast-1:240993297305:sqs-image"
+                "arn:aws:logs:ap-southeast-1:<account-id>:*",
+                "arn:aws:sqs:ap-southeast-1:<account-id>:sqs-image"
             ]
         }
     ]

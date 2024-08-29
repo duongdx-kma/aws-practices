@@ -1,6 +1,6 @@
 {
     "TargetLambdaFncName": "demoFunction2",
-    "TargetLambdaFncArn": "arn:aws:lambda:ap-southeast-1:240993297305:function:demoFunction2",
+    "TargetLambdaFncArn": "arn:aws:lambda:ap-southeast-1:<account-id>:function:demoFunction2",
     "TimeZone": "Asia/Seoul",
     "ScheduledUpdateGroupActions": [
       {
