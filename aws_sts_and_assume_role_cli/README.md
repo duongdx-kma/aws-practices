@@ -171,7 +171,7 @@ aws sts get-caller-identity --profile sts-user
 }
 
 # Step 2: get token
-aws sts assume-role --role-arn "arn:aws:iam::<account-id>:role/s3-read-put-role" --role-session-name "AWS_CLI_Testing_Assume_Session"
+aws sts assume-role --profile sts-user --role-arn "arn:aws:iam::<account-id>:role/s3-read-put-role" --role-session-name "AWS_CLI_Testing_Assume_Session"
 
 # result
 {
@@ -347,7 +347,7 @@ aws sts get-caller-identity
 }
 
 # Step 2: get token
-aws sts assume-role --role-arn "arn:aws:iam::<account-id>:role/s3-read-put-role" --role-session-name "AWS_CLI_Testing_Assume_Session"
+aws sts assume-role --profile sts-user --role-arn "arn:aws:iam::<account-id>:role/s3-read-put-role" --role-session-name "AWS_CLI_Testing_Assume_Session"
 
 # result
 {
