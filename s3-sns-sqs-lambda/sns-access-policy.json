@@ -9,10 +9,10 @@
           "Service": "s3.amazonaws.com"
         },
         "Action": "SNS:Publish",
-        "Resource": "arn:aws:sns:ap-southeast-1:240993297305:sns-fanout",
+        "Resource": "arn:aws:sns:ap-southeast-1:<account-id>:sns-fanout",
         "Condition": {
           "StringEquals": {
-            "aws:SourceAccount": "240993297305"
+            "aws:SourceAccount": "<account-id>"
           },
           "ArnLike": {
             "aws:SourceArn": "arn:aws:s3:::duongdx-event-driven"
@@ -26,12 +26,12 @@
           "Service": "sqs.amazonaws.com"
         },
         "Action": "sns:Subscribe",
-        "Resource": "arn:aws:sns:ap-southeast-1:240993297305:sns-fanout",
+        "Resource": "arn:aws:sns:ap-southeast-1:<account-id>:sns-fanout",
         "Condition": {
           "ArnEquals": {
             "aws:SourceArn": [
-              "arn:aws:sqs:ap-southeast-1:240993297305:sqs-image",
-              "arn:aws:sqs:ap-southeast-1:240993297305:sqs-video"
+              "arn:aws:sqs:ap-southeast-1:<account-id>:sqs-image",
+              "arn:aws:sqs:ap-southeast-1:<account-id>:sqs-video"
             ]
           }
         }
