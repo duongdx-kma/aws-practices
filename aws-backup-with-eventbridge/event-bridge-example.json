@@ -1,0 +1,8 @@
+[
+  {
+    "Source": "aws.backup",
+    "DetailType": "Backup Job State Change",
+    "Detail": "{\"backupJobId\":\"58cdef95-7680-4c74-80d5-1b64093999c8\",\"backupVaultArn\":\"arn:aws:backup:us-west-2:1112233445566:backup-vault:f59bffcd-2538-4bbe-8343-1c60dae27c27\",\"backupVaultName\":\"f59bffcd-2538-4bbe-8343-1c60dae27c27\",\"bytesTransferred\":\"0\",\"creationDate\":\"2020-07-15T21:33:00.803Z\",\"iamRoleArn\":\"arn:aws:iam::1112233445566:role/MockRCBackupTestRole\",\"resourceArn\":\"arn:aws:service:us-west-2:1112233445566:resource-type/resource-id\",\"resourceType\":\"type\",\"state\":\"ABORTED\",\"statusMessage\":\"Backup job was stopped by user.\",\"completionDate\":\"2020-07-15T21:33:01.621Z\",\"startBy\":\"2020-07-16T05:33:00.803Z\",\"percentDone\":0}",
+    "EventBusName": "default"
+  }
+]

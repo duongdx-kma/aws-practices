@@ -1,0 +1,27 @@
+{
+    "version": "0",
+    "id": "87de62a6-b2bb-a174-effe-c8295c99dc39",
+    "detail-type": "Backup Job State Change",
+    "source": "aws.backup",
+    "account": "<account-id>",
+    "time": "2024-09-02T05:01:50Z",
+    "region": "ap-southeast-1",
+    "resources": [],
+    "detail":
+        {
+            "backupJobId": "9ba6e86c-38c5-43af-90f3-57212ba8c395",
+            "backupVaultArn": "arn:aws:backup:ap-southeast-1:<account-id>:backup-vault:critical-vault",
+            "backupVaultName": "critical-vault",
+            "bytesTransferred": "0",
+            "creationDate": "2024-09-02T04:57:01.234Z",
+            "iamRoleArn": "arn:aws:iam::<account-id>:role/service-role/AWSBackupDefaultServiceRole",
+            "resourceArn": "arn:aws:ec2:ap-southeast-1:<account-id>:instance/i-08ecb7d5837c0a02b",
+            "resourceType": "EC2",
+            "state": "ABORTED",
+            "statusMessage": "Backup job was stopped by user.",
+            "completionDate": "2024-09-02T05:01:35.431564316Z",
+            "startBy": "2024-09-02T05:57:01.234Z",
+            "percentDone": 0.0,
+            "retryCount": "6",
+        },
+}

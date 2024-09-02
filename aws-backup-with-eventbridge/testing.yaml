@@ -1,0 +1,50 @@
+{
+  "type": "message",
+  "attachments":
+    [
+      {
+        "contentType": "application/vnd.microsoft.card.adaptive",
+        "content":
+          {
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "type": "AdaptiveCard",
+            "version": "1.4",
+            "msteams": { "width": "Full" },
+            "body":
+              [
+                {
+                  "type": "TextBlock",
+                  "text": "⚠️ Backup Job State Change",
+                  "weight": "bolder",
+                  "size": "Large",
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "ㆍ 계정 : <account-id>",
+                  "wrap": True,
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "ㆍ 백업 ID : 9ba6e86c-38c5-43af-90f3-57212ba8c395",
+                  "wrap": True,
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "ㆍ 이벤트 발생 시간 : 2024-09-02 14:01:50",
+                  "wrap": True,
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "ㆍ 분류 : ABORTED",
+                  "wrap": True,
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "ㆍ 메시지 : Backup job was stopped by user.",
+                  "wrap": True,
+                },
+              ],
+          },
+      },
+    ],
+}
